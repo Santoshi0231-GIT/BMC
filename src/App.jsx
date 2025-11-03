@@ -8,7 +8,7 @@ import About from "./components/pages/About.jsx";
 import Contact from "./components/pages/Contact.jsx";
 import Service from "./components/pages/Service.jsx";
 import ProtectedRoute from "./auth/protectedRoute.jsx";
-
+import Navbar from "./components/shared/Navbar.jsx";
 // The main App component.
 const App = () => {
   const navlink = {
@@ -29,6 +29,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/protectedroute" element={<ProtectedRoute />} />
+          <Route path="/Navbar"element={<Navbar/>}></Route>
          
         </Routes>
       </div>
